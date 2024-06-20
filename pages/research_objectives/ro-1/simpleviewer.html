@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html dir="ltr" mozdisallowselectionprint>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="google" content="notranslate">
+  <title>PDF.js viewer using built components</title>
+  <script src="https://hypothes.is/embed.js" async></script>
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
+  <link rel="stylesheet" href="../../../pdf_viewer.css">
+  <script src="../../../pdf.mjs" type="module"></script>
+  <script src="../../../pdf_viewer.mjs" type="module"></script>
+  <style>
+    body {
+      background-color: #808080;
+      margin: 0;
+      padding: 0;
+    }
+
+    #viewerContainer {
+      overflow: auto;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+
+    .zoom-controls {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      z-index: 1000;
+    }
+
+    .zoom-button {
+      background-color: white;
+      border: 1px solid rgb(219, 219, 219);
+      padding: 0px;
+      margin: 6px;
+      cursor: pointer;
+      width: 40px;
+      height: 40px;
+      color: rgb(115, 115, 115);
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 6px;
+      transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+      /* Smooth transition for hover effect */
+    }
+
+    .zoom-button:hover {
+      color: rgb(32, 32, 32);
+      /* Change to your desired hover text color */
+    }
+
+    .zoom-button i {
+      font-size: 24px;
+    }
+  </style>
+</head>
+
+<body tabindex="1">
+  <div id="viewerContainer">
+    <div id="viewer" class="pdfViewer"></div>
+  </div>
+  <div class="zoom-controls">
+    <button id="zoomIn" class="zoom-button"><i class='bx bx-zoom-in'></i></button>
+    <button id="zoomOut" class="zoom-button"><i class='bx bx-zoom-out'></i></button>
+  </div>
+  <script src="simpleviewer.mjs" type="module"></script>
+</body>
+
+</html>

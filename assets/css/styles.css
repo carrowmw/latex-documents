@@ -1,0 +1,151 @@
+/* Ensure the html and body elements take up the full height */
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/* Basic resets */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* General styling */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation styling */
+.navigation {
+    background-color: #333;
+    color: #fff;
+}
+
+.navigation .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.navigation-title {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.navigation-list {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.navigation-item {
+    margin-left: 15px;
+}
+
+.navigation-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.navigation-link:hover {
+    text-decoration: underline;
+}
+
+/* Main content styling */
+.container.list {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+}
+
+.title {
+    font-size: 2em;
+    margin-bottom: 0.5em;
+}
+
+.title-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.title-link:hover {
+    text-decoration: underline;
+}
+
+.document-list {
+    list-style: none;
+    padding: 0;
+}
+
+.document-list li {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.date {
+    display: block;
+    font-size: 0.9em;
+    color: #999;
+}
+
+.title {
+    font-size: 1.2em;
+    color: #333;
+    text-decoration: none;
+}
+
+.title:hover {
+    text-decoration: underline;
+}
+
+/* Footer styling */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+.footer a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+/* PDF pages */
+.pdf-container {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+.textLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    pointer-events: none;
+    font-size: 10px;
+    line-height: 1.5;
+}
+
+.pdf-page {
+    position: relative;
+}
