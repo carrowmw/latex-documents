@@ -6,7 +6,7 @@ pdfjsLib.GlobalWorkerOptions.workerSrc = "../../../pdf.worker.mjs";
 
 const CMAP_URL = "../../../node_modules/pdfjs-dist/cmaps/";
 const CMAP_PACKED = true;
-const DEFAULT_URL = "https://storage.googleapis.com/phd-latex-documents-my-pdfs/20240624_DMP.pdf";
+const DEFAULT_URL = "https://storage.googleapis.com/phd-latex-documents-my-pdfs/20240624_AP.pdf";
 const ENABLE_XFA = true;
 const SEARCH_FOR = "";
 
